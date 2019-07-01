@@ -54,7 +54,7 @@ let sum = 0;
 for (let i = 0; i < 10; i++) {
   sum = sum + i;
 }
-console.log(sum);
+console.log(sum); // 45
 ```
 
 # 8번
@@ -65,7 +65,7 @@ for (let i = 0; i < 20; i++) {
     sum = sum + i
   }
 }
-console.log(sum);
+console.log(sum); // 73
 ```
 
 # 9번
@@ -76,7 +76,7 @@ for (let i = 0; i < 20; i++) {
     sum = sum + i
   }
 }
-console.log(sum);
+console.log(sum); // 117
 ```
 
 # 10번
@@ -95,10 +95,53 @@ let blank = '';
 for (let i = 1; i <= 5; i++) {
   for (let j = 1; j <= i; j++) {
   }
-  console.log(blank=blank+star);
+  console.log(blank = blank + star);
+}
+
+for (let i = 0; i < 5; i++) {
+  let star = "";
+  for (let j = 0; j <= i; j++) {
+    star = star + "*";
+  }
+  console.log(star);
+}
 ```
 
 # 12번
 ```
+for (let i = 0; i < 5; i++) {
+  let star = '';
+  for (let j = 0; j < i; j++) {
+    star = star + ' ';
+  }
+  for (let j = 0; j < 5 - i; j++) {
+    star = star + '*'
+  }
+  console.log(star);
+}
+```
 
+# 13번
+```
+for (let i = 0; i < 5; i++) {
+  let star = '';
+  for (let j = 0; j < 5-i; j++) {
+    star = star + '*';
+  }
+  console.log(star);
+}
+```
+
+# 14번
+```
+for (let i = 0; i < 5; i++) {
+  let star = '';
+  for (let j = 0; j <= 5-i; j++) {
+    star = star + ' ';
+  }
+  for (let j = 0; j <= i; j++) {
+    star = star + '*'
+  }
+  console.log(star);
+}
 ```

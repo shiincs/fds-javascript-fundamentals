@@ -1,5 +1,7 @@
-let j = '';
-for (let i = 0; i < 10; i++) {
-  if (i % 2 === 0) { j += i }
+for (let i = 0; i < 5; i++) {
+  let star = '';
+  for (let j = 0; j <= i; j++) {
+    star = star + '*';
+  }
+  console.log(star);
 }
-console.log(j)
