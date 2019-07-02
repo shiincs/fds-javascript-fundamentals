@@ -99,9 +99,9 @@ for (let i = 1; i <= 5; i++) {
 }
 
 for (let i = 0; i < 5; i++) {
-  let star = "";
+  let star = '';
   for (let j = 0; j <= i; j++) {
-    star = star + "*";
+    star = star + '*';
   }
   console.log(star);
 }
