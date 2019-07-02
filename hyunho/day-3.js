@@ -27,7 +27,60 @@ for (let i = 10; i > 0; i--) {
   }
 }
 
-// Q5. while문을 사용하여 0 부터 10 미만의 정수 중에서 짝수만을 작은 수부터 출력하시오.\
+// Q5. while문을 사용하여 0 부터 10 미만의 정수 중에서 짝수만을 작은 수부터 출력하시오.
+let i = 0;
+while (i < 9) {
+  i++;
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+// Q6. while문을 사용하여 0 부터 10 미만의 정수 중에서 홀수만을 큰수부터 출력하시오.
+let i = 10;
+while (i > 0) {
+  i--;
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
+
+// Q7. for 문을 사용하여 0부터 10미만의 정수의 합을 출력하시오.
+let totalSum = 0;
+for (let i = 0; i < 10; i++) {
+  totalSum += i;
+}
+console.log(totalSum);
+
+// Q8. 1부터 20 미만의 정수 중에서 2 또는 3의 배수가 아닌 수의 총합을 구하시오.
+let totalAdd = 0;
+
+for (let i = 1; i < 20; i++) {
+  if (i % 2 === 0) {
+    // return
+  } else if (i % 3 === 0) {
+    // return
+  } else {
+    totalAdd += i;
+  }
+}
+console.log(totalAdd);
+
+// Q9. 1부터 20 미만의 정수 중에서 2 또는 3의 배수인 수의 총합을 구하시오.
+let totalAdd = 0;
+
+for (let i = 1; i < 20; i++) {
+  if (i % 2 === 0) {
+    totalAdd += i;
+  } else if (i % 3 === 0) {
+    totalAdd += i;
+  } else {
+    console.log(i);
+  }
+}
+console.log(totalAdd);
+
+// Q10. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하시오.
 
 // ------------------ Fundamental Study ------------------
 
