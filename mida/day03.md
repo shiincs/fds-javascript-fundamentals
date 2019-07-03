@@ -145,10 +145,10 @@ while(num < 10){
 ```
 6. while문을 사용하여 0 부터 10 미만의 정수 중에서 홀수만을 큰수부터 출력하시오.
 ```
-var num = 10;
-while(num > 0){
+var num = 9;
+while(num > 1){
   console.log(num);
-  num -= 1;
+  num -= 2;
 }
 ```
 7. for 문을 사용하여 0부터 10미만의 정수의 합을 출력하시오.
@@ -156,10 +156,65 @@ while(num > 0){
 sum = 0;
 for(var i = 0; i < 10; i++){
   sum += i;
-  console.log(sum)
 }
+console.log(sum)
 ```
 8. 1부터 20 미만의 정수 중에서 2 또는 3의 배수가 아닌 수의 총합을 구하시오.
 ```
-// 나머지 문제는 이어서 풀 예정
+var sum = 0;
+for(var i = 1; i < 20; i++){
+  if(i % 2 !== 0 && i % 3 !== 0){
+    sum += i;
+  }
+}
+console.log(sum)
+```
+9. 1부터 20 미만의 정수 중에서 2 또는 3의 배수인 수의 총합을 구하시오.
+```
+var sum = 0;
+for(var i = 1; i < 20; i++){
+  if(i % 2 === 0 || i % 3 === 0){
+    sum += i;
+  }
+}
+console.log(sum)
+```
+10. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하시오.
+```
+var sum = [];
+for(var i = 1; i <= 6; i++){
+  for(var j = 1; j <= 6; j++){
+    if(i + j == 6){
+      sum = [i,j];
+      console.log(sum)
+    }
+  }
+}
+```
+11.  삼각형 출력하기 - pattern 1
+```
+var star = '';
+for(var i = 1; i <= 5; i++){
+  for(var j = i; j <= i; j++){
+    star += '*';
+    console.log(star)
+  }
+}
+```
+12. 삼각형 출력하기 - pattern 2
+```
+```
+
+13. 
+```
+
+for(var i = 5; i >= 1; i--){
+  var star = '';
+  for(var j = i; j >= 1; j--){
+    star += '*';
+  }
+  console.log(star)
+}
+
+
 ```
