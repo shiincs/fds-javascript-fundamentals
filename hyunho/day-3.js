@@ -1,3 +1,7 @@
+// https://poiemaweb.com/fastcampus-exercise/exercise-control-flow
+// poiema - javascript 10~11장 (원시값과 객체의 비교, 함수)
+// [선택] 12장(스코프)
+
 // Q1. 변수 x가 10보다 크고 20보다 작을 때 변수 x를 출력하는 조건식을 완성하라.
 var x = 15;
 if (x > 10 && x < 20) {
@@ -81,10 +85,10 @@ for (let i = 1; i < 20; i++) {
 console.log(totalAdd);
 
 // Q10. 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하시오.
-for (let i = 1; i <= 6; i++){
-  for (let j = 1; j <= 6; j++){
-    if (i + j === 6){
-      console.log(`[${i}, ${j}]`)
+for (let i = 1; i <= 6; i++) {
+  for (let j = 1; j <= 6; j++) {
+    if (i + j === 6) {
+      console.log(`[${i}, ${j}]`);
     }
   }
 }
@@ -92,25 +96,24 @@ for (let i = 1; i <= 6; i++){
 // Q11. . 삼각형 출력하기 - pattern 1
 let line = '';
 
-for (let i = 0; i < 5; i++){
-  line += "*"
-    console.log(line)
-}  
+for (let i = 0; i < 5; i++) {
+  line += '*';
+  console.log(line);
+}
 
 //---
 
 let line = '';
-for (let i = 5; i > 0; i--){
-  for (let j = 0; j < 6; j++ ){
-    j = "*"
-      line += j
-    
-    console.log(line)
+for (let i = 5; i > 0; i--) {
+  for (let j = 0; j < 6; j++) {
+    j = '*';
+    line += j;
+
+    console.log(line);
   }
 }
 
 // Q12. 삼각형 출력하기 - pattern 2
-
 
 // ------------------ Fundamental Study ------------------
 
