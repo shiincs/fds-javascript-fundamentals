@@ -145,3 +145,51 @@ for (let i = 0; i < 5; i++) {
   console.log(star);
 }
 ```
+
+# 15번
+```
+const line = 5;
+let star = '';
+
+for (let i = 0; i < line; i++) {
+  for (let j = 0; j < line; j++) {
+    if (i + j >= line -1) {
+      star += '*';
+    } else {
+      star += ' ';
+    }
+  }
+  for (let j = 0; j < line; j++) {
+    if (i > j) {
+      star += '*';
+    }
+  }
+  star += '\n';
+}
+
+console.log(star)
+```
+
+# 16번
+```
+const line = 5;
+let star = '';
+
+for (let i = 0; i < line; i++) {
+  for (let j = 0; j < line; j++) {
+    if (i <= j) {
+      star += '*';
+    } else {
+      star += ' ';
+    }
+  }
+  for (let j = 0; j < line; j++) {
+    if (i + j < line -1) {
+      star += '*';
+    }
+  }
+  star += '\n';
+}
+
+console.log(star)
+```

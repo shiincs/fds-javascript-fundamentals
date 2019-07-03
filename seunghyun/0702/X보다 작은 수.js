@@ -12,7 +12,7 @@ const arr = [1, 10, 4, 9, 2, 3, 8, 5, 7, 6];
 let answer = ''
 for (let i = 0; i < arr.length; i++) {
   // console.log(arr[i]);
-  if (arr[i] < 5) {
+  if (arr[i] < 7) {
     answer += arr[i] + ' ';
   }
 }
