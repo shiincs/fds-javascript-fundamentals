@@ -160,10 +160,28 @@ function solution(n) {
 function solution(num) {
     var answer = num;
     if(answer % 2){
-        return 'Odd'
-    }else{
         return 'Even'
+    }else{
+        return 'Odd'
     }
     return ;
+}
+
+
+
+
+// 4번문제. 평균값 구하기
+function solution(arr){
+    let sum = 0;
+    for(let i =0; i <arr.length; i++){
+        sum = sum + arr[i] // sum += arr[i]
+    }
+    return sum / arr.length
+}
+function solution(arr){
+    return arr.reduce(function(acc,item){
+        acc += item
+        return acc
+    },0) / arr.length // 첫번째 인자로 콜백함수, 두번째 인자는 누적된값의 초기값 
 }
 ```
