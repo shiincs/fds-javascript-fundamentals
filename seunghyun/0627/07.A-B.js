@@ -1,2 +1,2 @@
-function substraction(A, B) { return A - B; }
-substraction(3, 2);
+function multiplication(A, B) { return A * B; }
+multiplication(3, 2);
